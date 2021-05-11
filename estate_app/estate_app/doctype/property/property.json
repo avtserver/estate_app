@@ -9,6 +9,7 @@
   "property_name",
   "address",
   "property_type",
+  "property_price",
   "column_break_3",
   "agent",
   "agent_name",
@@ -94,11 +95,16 @@
    "fieldtype": "Data",
    "label": "Agent Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "property_price",
+   "fieldtype": "Currency",
+   "label": "Property Price"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-10 16:14:18.266203",
+ "modified": "2021-05-11 12:47:20.889850",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Property",

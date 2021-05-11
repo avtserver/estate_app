@@ -12,13 +12,14 @@
   {
    "fieldname": "amenity",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Amenity",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-10 12:59:59.055008",
+ "modified": "2021-05-11 13:57:23.433107",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Property Amenity Item",
