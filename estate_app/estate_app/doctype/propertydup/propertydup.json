@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "format:{######}",
+ "creation": "2021-05-11 21:47:05.091841",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property_name",
+  "address",
+  "property_type",
+  "property_price",
+  "column_break_3",
+  "image",
+  "agentcheck",
+  "agent",
+  "agent_name",
+  "status",
+  "description_section",
+  "description",
+  "property_amenity_details_section",
+  "amenities",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Property Type",
+   "reqd": 1
+  },
+  {
+   "depends_on": "property",
+   "fieldname": "property_price",
+   "fieldtype": "Currency",
+   "label": "Property Price"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Agent"
+  },
+  {
+   "depends_on": "property",
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nRent\nSale\nLease",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_amenity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Property Amenity Details"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "amenities",
+   "fieldtype": "Table",
+   "label": "Amenities",
+   "options": "Property Amenity Detail"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "default": "0",
+   "fieldname": "agentcheck",
+   "fieldtype": "Check",
+   "label": "Agent?"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2021-05-12 10:48:56.599170",
+ "modified_by": "Administrator",
+ "module": "Estate App",
+ "name": "Propertydup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "propertyd",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

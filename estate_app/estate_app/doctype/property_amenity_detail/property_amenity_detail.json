@@ -19,7 +19,7 @@
   },
   {
    "fieldname": "price",
-   "fieldtype": "Link",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Price",
    "options": "Property Amenity Item",
@@ -29,7 +29,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-11 13:54:50.957084",
+ "modified": "2021-05-11 17:12:23.030073",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Property Amenity Detail",
