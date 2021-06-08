@@ -115,6 +115,21 @@
     </div>
 </div>
 
+
+
+            {% for wpaddress in wpadds %}
+
+{{wpaddress.name}}
+{{wpaddress.address}}
+<h2 class="property-title"><a href="/property/wpdetail/{{wpaddress.name}}">{{wpaddress.city}}</a></h2>
+
+            {% endfor %}
+
+
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
 <div class="site-section site-section-sm bg-light">
     <div class="container">
 

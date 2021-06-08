@@ -6,4 +6,7 @@ def get_context(context):
         as_dict=True)
     context.properties = properties
 
+    wpadds = frappe.db.sql("""SELECT name, address, city, pin_code FROM `tabWPAddress` ORDER BY creation DESC;""",
+                               as_dict=True)
+    context.wpadds = wpadds
     return  context
